@@ -3,12 +3,12 @@ import {styled} from 'styled-components'
 import logo from "../images/logo.png"
 const Navbar = () => {
   return (
-    <DIV>
+    <DIV className='p-3'>
         <LOGO>
             <img src={logo} alt="" />
             <h1>Nexcent</h1>
         </LOGO>
-        <LINKS>
+        <LINKS >
             <a href="/">Home</a>
             <a href="/">Service</a>
             <a href="/">Feature</a>
@@ -30,6 +30,7 @@ const DIV=styled.div`
 display: flex;
 justify-content: space-around;
 align-items: center;
+background-color: #f5f7fa;
 
 h1{
     color: #263238;
@@ -65,10 +66,11 @@ const LINKS=styled.div`
     }
 `
 const BUTTONS=styled.div`
+/* border: 1px solid red; */
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 10%;
+    width: 13%;
     button{
         font-size: 20px;
     }
